@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+    <style>
+        body {
+            font: nomral 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de String</h1>
+    <script>
+        var nome = window.prompt(`Qual o seu nome ?`);
+        document.writeln(`Olá <strong>${nome}</strong>! Seu nome tem <strong>${nome.length}</strong>! letras.<br>`)
+        document.write(`Seu nome em maiusculas é  ${nome.toUpperCase()}.<br>`);
+        document.write(`Seu nome em minusculas é  ${nome.toLowerCase()}.<br>`);
+
+        /* Formantando númros
+        var n1 = 1543.5
+        n1
+        No console mostra:
+        1543.5
+        n1.toFixed(2) - ele faz aparecer as duas casas decimais
+
+        Macete pra mostrar o simbolo do real
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) */
+    </script>
+</body>
+</html>
